@@ -1,7 +1,17 @@
-import styles from "./App.module.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import { Home } from "./pages/Home/Home";
+import { Projects } from "./pages/Projects/Projects";
 
 const App = () => {
-  return <div className={styles.container}>pqojwdq</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path="/" />
+        <Route element={<Projects />} path="/projects" />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
