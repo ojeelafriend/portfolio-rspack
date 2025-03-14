@@ -93,25 +93,31 @@ h1 {
   border-radius: 0 0 20px 20px;
 }
 
-.containerInfo > svg {
+.containerInfo > a {
   transition: color 0.4s ease;
   padding: 1rem;
+  color: black;
 }
 
-.containerInfo > svg:hover {
+.containerInfo > a > svg {
+  height: 40px;
+  width: 40px;
+}
+
+.containerInfo > a:hover {
   background-color: rgb(0, 0, 0);
   color: white;
 }
 
-.containerInfo > svg:active {
+.containerInfo > a:active {
   background-color: rgba(0, 0, 0, 0.609);
 }
 
-.containerInfo > .discord:hover {
+.discord:hover {
   color: rgb(151, 54, 242);
 }
 
-.containerInfo > .linkedin:hover {
+.linkedin:hover {
   color: rgb(0, 98, 255);
 }
 .modalHidden {

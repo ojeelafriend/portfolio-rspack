@@ -62,9 +62,22 @@ export const Home = () => {
           </a>
         </div>
         <div className={styles.containerInfo}>
-          <FaLinkedin className={styles.linkedin} size={30} />
-          <FaDiscord className={styles.discord} size={30} />
-          <FaGithub className={styles.github} size={30} />
+          <a href="https://www.linkedin.com/in/alejo-solis/" target="__blank">
+            <FaLinkedin className={styles.linkedin} size={30} href="" />
+          </a>
+          <a
+            href="https://discord.com/users/776550789216337931"
+            target="__blank"
+          >
+            <FaDiscord
+              className={styles.discord}
+              size={30}
+              href="https://github.com/ojeelafriend"
+            />
+          </a>
+          <a href="https://github.com/ojeelafriend" target="__blank">
+            <FaGithub className={styles.github} size={30} />
+          </a>
         </div>
       </div>
     </>
