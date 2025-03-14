@@ -1,0 +1,68 @@
+.container {
+  display: grid;
+  width: fit-content;
+  background-color: #1f1e26;
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+
+.content {
+  display: grid;
+  overflow: hidden;
+  image-orientation: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container > .containerInfo {
+  padding: 0.5em;
+}
+
+.container > .containerInfo > h2 {
+  margin: 0;
+}
+
+.container > .containerInfo > p {
+  color: rgba(255, 255, 255, 0.647);
+  padding: 0.2em;
+}
+
+.container > .containerInfo > .techdeployinfo {
+  display: flex;
+  font-size: 14px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > .containerInfo > .techdeployinfo > p {
+  padding: 0.2em;
+}
+
+.container > .containerInfo > .techdeployinfo > a {
+  padding: 0.7em;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  text-decoration: none;
+}
+
+.container:hover > .containerInfo > .techdeployinfo > a {
+  padding: 0.7em;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(19, 19, 19);
+  text-decoration: 2px solid rgb(124, 235, 97) underline;
+}

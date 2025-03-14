@@ -114,6 +114,51 @@ h1 {
 .containerInfo > .linkedin:hover {
   color: rgb(0, 98, 255);
 }
+.modalHidden {
+  display: none;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
+  background-color: #000000eb;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal > .gridProjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2.5em;
+  margin-bottom: 2.5em;
+  padding: 2rem;
+}
+
+.modal > h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.modal > .quit {
+  cursor: pointer;
+  display: flex;
+  justify-self: end;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  font-size: 48px;
+}
+
+@media (max-width: 500px) {
+  .modal > .gridProjects {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+  }
+}
 
 @media (min-width: 716px) {
   .container {
